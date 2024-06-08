@@ -16,15 +16,14 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e0e3eb;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 
-  background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149159772.jpg?t=st=1717836401~exp=1717840001~hmac=1a51c7f3be762ea7240f70e37878354a91ed0bc5e2cb1b030a271559c8f41516&w=996');
-  background-size: cover;
-  background-position: center;
+  background: rgb(17, 80, 81);
+  background: linear-gradient(0deg, rgb(8, 135, 137) 0%, rgb(42, 10, 53) 86%);
+  background-attachment: fixed;
 }
 
 .container {
@@ -39,4 +38,77 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  padding: 0 7px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #fefae0;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+
+  position: relative;
+  user-select: none;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+.buttons button:hover {
+  transition-duration: 0.1s;
+  background-color: #bcb9b9;
+}
+
+.buttons button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 7px 7px #aaa7a7;
+}
+
+.buttons button:active:after {
+  box-shadow: 0 0 0 0 #aaa7a7;
+  position: absolute;
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.buttons button:active {
+  top: 1px;
+}
+
+.operator {
+  color: #fefae0;
 }
