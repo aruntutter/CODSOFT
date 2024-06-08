@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e0e3eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149159772.jpg?t=st=1717836401~exp=1717840001~hmac=1a51c7f3be762ea7240f70e37878354a91ed0bc5e2cb1b030a271559c8f41516&w=996');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
